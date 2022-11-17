@@ -1,0 +1,1 @@
+Before chatting, Redis must be on.
