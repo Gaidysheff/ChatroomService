@@ -11,12 +11,19 @@
       placeholder="Enter your favourable room"
     />
     <br />
+    {% if user.is_authenticated %}
     <input
       id="room-name-submit"
       class="btn btn-primary btn-lg btn-block"
       type="button"
       value="Enter"
     />
+    {% else %}
+    <button class="btn btn-danger btn-lg btn-block">Enter</button>
+    <p style="color: red; font-size: x-large">
+      Please, register and/or login. Then 'Enter' will be activated
+    </p>
+    {% endif %}
   </div>
 </div>
 <script>
